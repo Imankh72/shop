@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "./Header";
 
 const Layout = ({ children, title }) => {
   return (
@@ -9,7 +10,7 @@ const Layout = ({ children, title }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen">
-        <header></header>
+        <Header />
         <main>{children}</main>
         <footer></footer>
       </div>
